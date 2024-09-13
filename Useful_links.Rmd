@@ -1,0 +1,20 @@
+---
+title: "Useful links for Bioinformatics"
+output: html_notebook
+---
+
+# R
+
+## Survival analysis
+
+A useful introduction to the survival package:
+
+<http://www.sthda.com/english/wiki/cox-proportional-hazards-model>
+
+# Markdown tips and tricks
+
+# Bioinformatics
+
+# Bash scripting
+
+# Regex

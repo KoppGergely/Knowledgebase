@@ -1762,6 +1762,37 @@ display: none;
 </div>
 <div id="markdown-tips-and-tricks" class="section level1">
 <h1>Markdown tips and tricks</h1>
+<div id="posit-tips-and-tricks" class="section level3">
+<h3>Posit tips and tricks</h3>
+<p>A great summary on how to make your Markdown documents more user
+friendly and easier to follow by the Posit team:</p>
+<p><a href="https://posit.co/blog/r-markdown-tips-tricks-1-rstudio-ide/">Rstudio
+basics</a></p>
+<p><a href="https://posit.co/blog/r-markdown-tips-tricks-2-cleaning-up-your-code/">Cleaning
+your code</a></p>
+<p><a href="https://posit.co/blog/r-markdown-tips-and-tricks-3-time-savers/">Time
+savers</a></p>
+<p><a href="https://posit.co/blog/r-markdown-tips-tricks-4-looks-better-works-better/">Looks
+better works better</a></p>
+<p>YAML header for the notebooks I use</p>
+<pre><code>
+title: &quot;HLA II promiscuity&quot;
+author: &quot;Gergely Koppány&quot;
+date: &quot;2024-09-13&quot;
+output: 
+  html_notebook: 
+    code_folding: hide
+    collapsed: yes
+    fig_caption: yes
+    fig_height: 4
+    fig_width: 5
+    smooth_scroll: yes
+    theme: sandstone
+    toc: yes
+    toc_depth: 5
+    toc_float: yes
+    number_sections: true</code></pre>
+</div>
 </div>
 <div id="bioinformatics" class="section level1">
 <h1>Bioinformatics</h1>
@@ -1774,7 +1805,7 @@ display: none;
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiVXNlZnVsIGxpbmtzIGZvciBCaW9pbmZvcm1hdGljcyIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKIyBSCgojIyBTdXJ2aXZhbCBhbmFseXNpcwoKQSB1c2VmdWwgaW50cm9kdWN0aW9uIHRvIHRoZSBzdXJ2aXZhbCBwYWNrYWdlOgoKPGh0dHA6Ly93d3cuc3RoZGEuY29tL2VuZ2xpc2gvd2lraS9jb3gtcHJvcG9ydGlvbmFsLWhhemFyZHMtbW9kZWw+CgojIE1hcmtkb3duIHRpcHMgYW5kIHRyaWNrcwoKIyBCaW9pbmZvcm1hdGljcwoKIyBCYXNoIHNjcmlwdGluZwoKIyBSZWdleAo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiVXNlZnVsIGxpbmtzIGZvciBCaW9pbmZvcm1hdGljcyIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKIyBSCgojIyBTdXJ2aXZhbCBhbmFseXNpcwoKQSB1c2VmdWwgaW50cm9kdWN0aW9uIHRvIHRoZSBzdXJ2aXZhbCBwYWNrYWdlOgoKPGh0dHA6Ly93d3cuc3RoZGEuY29tL2VuZ2xpc2gvd2lraS9jb3gtcHJvcG9ydGlvbmFsLWhhemFyZHMtbW9kZWw+CgojIE1hcmtkb3duIHRpcHMgYW5kIHRyaWNrcwoKIyMjIFBvc2l0IHRpcHMgYW5kIHRyaWNrcwoKQSBncmVhdCBzdW1tYXJ5IG9uIGhvdyB0byBtYWtlIHlvdXIgTWFya2Rvd24gZG9jdW1lbnRzIG1vcmUgdXNlciBmcmllbmRseSBhbmQgZWFzaWVyIHRvIGZvbGxvdyBieSB0aGUgUG9zaXQgdGVhbToKCltSc3R1ZGlvIGJhc2ljc10oaHR0cHM6Ly9wb3NpdC5jby9ibG9nL3ItbWFya2Rvd24tdGlwcy10cmlja3MtMS1yc3R1ZGlvLWlkZS8pCgpbQ2xlYW5pbmcgeW91ciBjb2RlXShodHRwczovL3Bvc2l0LmNvL2Jsb2cvci1tYXJrZG93bi10aXBzLXRyaWNrcy0yLWNsZWFuaW5nLXVwLXlvdXItY29kZS8pCgpbVGltZSBzYXZlcnNdKGh0dHBzOi8vcG9zaXQuY28vYmxvZy9yLW1hcmtkb3duLXRpcHMtYW5kLXRyaWNrcy0zLXRpbWUtc2F2ZXJzLykKCltMb29rcyBiZXR0ZXIgd29ya3MgYmV0dGVyXShodHRwczovL3Bvc2l0LmNvL2Jsb2cvci1tYXJrZG93bi10aXBzLXRyaWNrcy00LWxvb2tzLWJldHRlci13b3Jrcy1iZXR0ZXIvKQoKWUFNTCBoZWFkZXIgZm9yIHRoZSBub3RlYm9va3MgSSB1c2UKCmBgYCAgICAgICAgIAoKdGl0bGU6ICJITEEgSUkgcHJvbWlzY3VpdHkiCmF1dGhvcjogIkdlcmdlbHkgS29wcMOhbnkiCmRhdGU6ICJgciBTeXMuRGF0ZSgpYCIKb3V0cHV0OiAKICBodG1sX25vdGVib29rOiAKICAgIGNvZGVfZm9sZGluZzogaGlkZQogICAgY29sbGFwc2VkOiB5ZXMKICAgIGZpZ19jYXB0aW9uOiB5ZXMKICAgIGZpZ19oZWlnaHQ6IDQKICAgIGZpZ193aWR0aDogNQogICAgc21vb3RoX3Njcm9sbDogeWVzCiAgICB0aGVtZTogc2FuZHN0b25lCiAgICB0b2M6IHllcwogICAgdG9jX2RlcHRoOiA1CiAgICB0b2NfZmxvYXQ6IHllcwogICAgbnVtYmVyX3NlY3Rpb25zOiB0cnVlCmBgYAoKIyBCaW9pbmZvcm1hdGljcwoKIyBCYXNoIHNjcmlwdGluZwoKIyBSZWdleAo=</div>
 
 
 

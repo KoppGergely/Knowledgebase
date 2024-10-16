@@ -11,7 +11,7 @@ editor_options:
 
 [Configure Ghuthub for Rstudio](https://gist.github.com/Z3tt/3dab3535007acf108391649766409421)
 
-[https://happygitwithr.com/](a complete walkthrough on starting a git version controlled Rstudio project)
+[https://happygitwithr.com/](a%20complete%20walkthrough%20on%20starting%20a%20git%20version%20controlled%20Rstudio%20project)
 
 ## Survival analysis
 
@@ -54,6 +54,12 @@ output:
 
 # Bioinformatics
 
+## Nextflow: a pipeline for complete bioinformatic data processes
+
+Nextflow offers multiple well documented and reproducible data analysis pipelines which should be considered, if reproducibility and convenience is important. [Nextflow's RNAseq pipeline](https://nf-co.re/rnaseq/3.16.0/)
+
 # Bash scripting
 
 # Regex
+
+[Regex Cheat Sheet](https://images.datacamp.com/image/upload/v1665049611/Marketing/Blog/Regular_Expressions_Cheat_Sheet.pdf)

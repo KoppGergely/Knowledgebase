@@ -1751,17 +1751,20 @@ display: none;
 </div>
 
 
-<!-- rnb-text-begin -->
 <div id="r" class="section level1">
 <h1>R</h1>
+<div id="connecting-rstudio-to-github" class="section level2">
+<h2>Connecting Rstudio to github</h2>
+<p><a href="https://gist.github.com/Z3tt/3dab3535007acf108391649766409421">Configure
+Ghuthub for Rstudio</a></p>
+<p><a href="a%20complete%20walkthrough%20on%20starting%20a%20git%20version%20controlled%20Rstudio%20project">https://happygitwithr.com/</a></p>
+</div>
 <div id="survival-analysis" class="section level2">
 <h2>Survival analysis</h2>
 <p>A useful introduction to the survival package:</p>
-<p><a href="http://www.sthda.com/english/wiki/cox-proportional-hazards-model" class="uri">http://www.sthda.com/english/wiki/cox-proportional-hazards-model</a></p>
-</div>
-</div>
-<div id="markdown-tips-and-tricks" class="section level1">
-<h1>Markdown tips and tricks</h1>
+<p><a href="http://www.sthda.com/english/wiki/cox-proportional-hazards-model" class="uri">http://www.sthda.com/english/wiki/cox-proportional-hazards-model</a>
+(<a href="http://www.sthda.com/english/wiki/survival-analysis-basics" class="uri">http://www.sthda.com/english/wiki/survival-analysis-basics</a>)
+# Markdown tips and tricks</p>
 <div id="posit-tips-and-tricks" class="section level3">
 <h3>Posit tips and tricks</h3>
 <p>A great summary on how to make your Markdown documents more user
@@ -1775,10 +1778,9 @@ savers</a></p>
 <p><a href="https://posit.co/blog/r-markdown-tips-tricks-4-looks-better-works-better/">Looks
 better works better</a></p>
 <p>YAML header for the notebooks I use</p>
-<pre><code>
-title: &quot;HLA II promiscuity&quot;
+<pre><code>title: &quot;HLA II promiscuity&quot;
 author: &quot;Gergely Koppány&quot;
-date: &quot;2024-09-13&quot;
+date: &quot;`r Sys.Date()`&quot;
 output: 
   html_notebook: 
     code_folding: hide
@@ -1794,6 +1796,7 @@ output:
     number_sections: true</code></pre>
 </div>
 </div>
+</div>
 <div id="bioinformatics" class="section level1">
 <h1>Bioinformatics</h1>
 </div>
@@ -1802,10 +1805,9 @@ output:
 </div>
 <div id="regex" class="section level1">
 <h1>Regex</h1>
-<!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiVXNlZnVsIGxpbmtzIGZvciBCaW9pbmZvcm1hdGljcyIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKIyBSCgojIyBTdXJ2aXZhbCBhbmFseXNpcwoKQSB1c2VmdWwgaW50cm9kdWN0aW9uIHRvIHRoZSBzdXJ2aXZhbCBwYWNrYWdlOgoKPGh0dHA6Ly93d3cuc3RoZGEuY29tL2VuZ2xpc2gvd2lraS9jb3gtcHJvcG9ydGlvbmFsLWhhemFyZHMtbW9kZWw+CgojIE1hcmtkb3duIHRpcHMgYW5kIHRyaWNrcwoKIyMjIFBvc2l0IHRpcHMgYW5kIHRyaWNrcwoKQSBncmVhdCBzdW1tYXJ5IG9uIGhvdyB0byBtYWtlIHlvdXIgTWFya2Rvd24gZG9jdW1lbnRzIG1vcmUgdXNlciBmcmllbmRseSBhbmQgZWFzaWVyIHRvIGZvbGxvdyBieSB0aGUgUG9zaXQgdGVhbToKCltSc3R1ZGlvIGJhc2ljc10oaHR0cHM6Ly9wb3NpdC5jby9ibG9nL3ItbWFya2Rvd24tdGlwcy10cmlja3MtMS1yc3R1ZGlvLWlkZS8pCgpbQ2xlYW5pbmcgeW91ciBjb2RlXShodHRwczovL3Bvc2l0LmNvL2Jsb2cvci1tYXJrZG93bi10aXBzLXRyaWNrcy0yLWNsZWFuaW5nLXVwLXlvdXItY29kZS8pCgpbVGltZSBzYXZlcnNdKGh0dHBzOi8vcG9zaXQuY28vYmxvZy9yLW1hcmtkb3duLXRpcHMtYW5kLXRyaWNrcy0zLXRpbWUtc2F2ZXJzLykKCltMb29rcyBiZXR0ZXIgd29ya3MgYmV0dGVyXShodHRwczovL3Bvc2l0LmNvL2Jsb2cvci1tYXJrZG93bi10aXBzLXRyaWNrcy00LWxvb2tzLWJldHRlci13b3Jrcy1iZXR0ZXIvKQoKWUFNTCBoZWFkZXIgZm9yIHRoZSBub3RlYm9va3MgSSB1c2UKCmBgYCAgICAgICAgIAoKdGl0bGU6ICJITEEgSUkgcHJvbWlzY3VpdHkiCmF1dGhvcjogIkdlcmdlbHkgS29wcMOhbnkiCmRhdGU6ICJgciBTeXMuRGF0ZSgpYCIKb3V0cHV0OiAKICBodG1sX25vdGVib29rOiAKICAgIGNvZGVfZm9sZGluZzogaGlkZQogICAgY29sbGFwc2VkOiB5ZXMKICAgIGZpZ19jYXB0aW9uOiB5ZXMKICAgIGZpZ19oZWlnaHQ6IDQKICAgIGZpZ193aWR0aDogNQogICAgc21vb3RoX3Njcm9sbDogeWVzCiAgICB0aGVtZTogc2FuZHN0b25lCiAgICB0b2M6IHllcwogICAgdG9jX2RlcHRoOiA1CiAgICB0b2NfZmxvYXQ6IHllcwogICAgbnVtYmVyX3NlY3Rpb25zOiB0cnVlCmBgYAoKIyBCaW9pbmZvcm1hdGljcwoKIyBCYXNoIHNjcmlwdGluZwoKIyBSZWdleAo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiVXNlZnVsIGxpbmtzIGZvciBCaW9pbmZvcm1hdGljcyIKb3V0cHV0OiBodG1sX25vdGVib29rCmVkaXRvcl9vcHRpb25zOiAKICBjaHVua19vdXRwdXRfdHlwZTogaW5saW5lCi0tLQoKIyBSCgojIyBDb25uZWN0aW5nIFJzdHVkaW8gdG8gZ2l0aHViCgpbQ29uZmlndXJlIEdodXRodWIgZm9yIFJzdHVkaW9dKGh0dHBzOi8vZ2lzdC5naXRodWIuY29tL1ozdHQvM2RhYjM1MzUwMDdhY2YxMDgzOTE2NDk3NjY0MDk0MjEpCgpbaHR0cHM6Ly9oYXBweWdpdHdpdGhyLmNvbS9dKGEgY29tcGxldGUgd2Fsa3Rocm91Z2ggb24gc3RhcnRpbmcgYSBnaXQgdmVyc2lvbiBjb250cm9sbGVkIFJzdHVkaW8gcHJvamVjdCkKCiMjIFN1cnZpdmFsIGFuYWx5c2lzCgpBIHVzZWZ1bCBpbnRyb2R1Y3Rpb24gdG8gdGhlIHN1cnZpdmFsIHBhY2thZ2U6Cgo8aHR0cDovL3d3dy5zdGhkYS5jb20vZW5nbGlzaC93aWtpL2NveC1wcm9wb3J0aW9uYWwtaGF6YXJkcy1tb2RlbD4gKDxodHRwOi8vd3d3LnN0aGRhLmNvbS9lbmdsaXNoL3dpa2kvc3Vydml2YWwtYW5hbHlzaXMtYmFzaWNzPikgXCMgTWFya2Rvd24gdGlwcyBhbmQgdHJpY2tzCgojIyMgUG9zaXQgdGlwcyBhbmQgdHJpY2tzCgpBIGdyZWF0IHN1bW1hcnkgb24gaG93IHRvIG1ha2UgeW91ciBNYXJrZG93biBkb2N1bWVudHMgbW9yZSB1c2VyIGZyaWVuZGx5IGFuZCBlYXNpZXIgdG8gZm9sbG93IGJ5IHRoZSBQb3NpdCB0ZWFtOgoKW1JzdHVkaW8gYmFzaWNzXShodHRwczovL3Bvc2l0LmNvL2Jsb2cvci1tYXJrZG93bi10aXBzLXRyaWNrcy0xLXJzdHVkaW8taWRlLykKCltDbGVhbmluZyB5b3VyIGNvZGVdKGh0dHBzOi8vcG9zaXQuY28vYmxvZy9yLW1hcmtkb3duLXRpcHMtdHJpY2tzLTItY2xlYW5pbmctdXAteW91ci1jb2RlLykKCltUaW1lIHNhdmVyc10oaHR0cHM6Ly9wb3NpdC5jby9ibG9nL3ItbWFya2Rvd24tdGlwcy1hbmQtdHJpY2tzLTMtdGltZS1zYXZlcnMvKQoKW0xvb2tzIGJldHRlciB3b3JrcyBiZXR0ZXJdKGh0dHBzOi8vcG9zaXQuY28vYmxvZy9yLW1hcmtkb3duLXRpcHMtdHJpY2tzLTQtbG9va3MtYmV0dGVyLXdvcmtzLWJldHRlci8pCgpZQU1MIGhlYWRlciBmb3IgdGhlIG5vdGVib29rcyBJIHVzZQoKYGBgICAgICAgICAgCnRpdGxlOiAiSExBIElJIHByb21pc2N1aXR5IgphdXRob3I6ICJHZXJnZWx5IEtvcHDDoW55IgpkYXRlOiAiYHIgU3lzLkRhdGUoKWAiCm91dHB1dDogCiAgaHRtbF9ub3RlYm9vazogCiAgICBjb2RlX2ZvbGRpbmc6IGhpZGUKICAgIGNvbGxhcHNlZDogeWVzCiAgICBmaWdfY2FwdGlvbjogeWVzCiAgICBmaWdfaGVpZ2h0OiA0CiAgICBmaWdfd2lkdGg6IDUKICAgIHNtb290aF9zY3JvbGw6IHllcwogICAgdGhlbWU6IHNhbmRzdG9uZQogICAgdG9jOiB5ZXMKICAgIHRvY19kZXB0aDogNQogICAgdG9jX2Zsb2F0OiB5ZXMKICAgIG51bWJlcl9zZWN0aW9uczogdHJ1ZQpgYGAKCiMgQmlvaW5mb3JtYXRpY3MKCiMgQmFzaCBzY3JpcHRpbmcKCiMgUmVnZXgK</div>
 
 
 
@@ -1852,7 +1854,7 @@ $(document).ready(function () {
 <!-- code folding -->
 <script>
 $(document).ready(function () {
-  window.initializeSourceEmbed("Useful_links.Rmd");
+  window.initializeSourceEmbed("README.md");
   window.initializeCodeFolding("show" === "show");
 });
 </script>

@@ -1,10 +1,3 @@
----
-title: "Useful links for Bioinformatics"
-output: html_notebook
-editor_options: 
-  chunk_output_type: inline
----
-
 # R
 
 ## Connecting Rstudio to github
@@ -17,7 +10,13 @@ editor_options:
 
 A useful introduction to the survival package:
 
-<http://www.sthda.com/english/wiki/cox-proportional-hazards-model> (<http://www.sthda.com/english/wiki/survival-analysis-basics>) \# Markdown tips and tricks
+<http://www.sthda.com/english/wiki/cox-proportional-hazards-model> (<http://www.sthda.com/english/wiki/survival-analysis-basics>)
+
+## Biomart
+
+An Ensembl based database that contains cross references, and annotation information on multiple organisms. [Vignette on Ensembl annotation](https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/accessing_ensembl.html)
+
+# Markdown tips and tricks
 
 ### Posit tips and tricks
 
@@ -31,7 +30,21 @@ A great summary on how to make your Markdown documents more user friendly and ea
 
 [Looks better works better](https://posit.co/blog/r-markdown-tips-tricks-4-looks-better-works-better/)
 
-YAML header for the notebooks I use
+## Collapsible section
+
+```         
+<details>
+
+<summary>Exciting code</summary>
+
+</details>
+```
+
+## YAML header for the notebooks I use
+
+<details>
+
+<summary>Exciting code</summary>
 
 ```         
 title: "HLA II promiscuity"
@@ -52,13 +65,31 @@ output:
     number_sections: true
 ```
 
+</details>
+
 # Bioinformatics
 
 ## Nextflow: a pipeline for complete bioinformatic data processes
 
 Nextflow offers multiple well documented and reproducible data analysis pipelines which should be considered, if reproducibility and convenience is important. [Nextflow's RNAseq pipeline](https://nf-co.re/rnaseq/3.16.0/)
 
+## Salmon
+
+Salmon analyses RNAseq data, and can determine, the strandedness, and other experimental parameters of the data, it it is unknown.
+
+[Salmon to determine strandedness](https://salmon.readthedocs.io/en/latest/salmon.html#what-s-this-libtype), [https://salmon.readthedocs.io/en/latest/index.html](Salmon documentation)
+
+## RSEM
+
+RSEM is a transcript quantification tool, that can determine the transcript isoform, and gene counts from a BAM filke aligned to the transcriptome. [RSEM Documentation](https://www.encodeproject.org/documents/0c78ea4b-9392-421b-a6f3-6c858b6002aa/@@download/attachment/RSEM_Documentation.pdf)
+
+## featureCounts
+
+Another RNAseq quantification tool, that can quantify gene counts from a genome aligned BAM file. Is part of the Subread software package. [Documentation](https://subread.sourceforge.net/SubreadUsersGuide.pdf)
+
 # Bash scripting
+
+[Bash scripting cheat sheet](https://devhints.io/bash)
 
 # Regex
 

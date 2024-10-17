@@ -44,7 +44,7 @@ A great summary on how to make your Markdown documents more user friendly and ea
 
 <details>
 
-<summary>Exciting code</summary>
+<summary>Show header</summary>
 
 ```         
 title: "HLA II promiscuity"

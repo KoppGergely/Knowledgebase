@@ -67,6 +67,10 @@ output:
 
 </details>
 
+## Additional details on markdown rendering
+
+<https://bookdown.org/yihui/rmarkdown-cookbook/parameterized-reports.html#parameterized-reports>
+
 # Bioinformatics
 
 ## Nextflow: a pipeline for complete bioinformatic data processes
@@ -77,7 +81,7 @@ Nextflow offers multiple well documented and reproducible data analysis pipeline
 
 Salmon analyses RNAseq data, and can determine, the strandedness, and other experimental parameters of the data, it it is unknown.
 
-[Salmon to determine strandedness](https://salmon.readthedocs.io/en/latest/salmon.html#what-s-this-libtype), [https://salmon.readthedocs.io/en/latest/index.html](Salmon documentation)
+[Salmon to determine strandedness](https://salmon.readthedocs.io/en/latest/salmon.html#what-s-this-libtype), [https://salmon.readthedocs.io/en/latest/index.html](Salmon%20documentation)
 
 ## RSEM
 

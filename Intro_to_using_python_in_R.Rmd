@@ -1,6 +1,7 @@
 ---
 title: "Reticulate tutorial for Immunoinfo"
 author: "Gergely Koppany"
+output: html_notebook
 ---
 
 This notebook is to introduce the user to the (reticulate R package)[<https://rstudio.github.io/reticulate/>], whic is used to run python from within the an R session.

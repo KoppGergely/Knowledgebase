@@ -1,0 +1,99 @@
+---
+title: "Reticulate tutorial for Immunoinfo"
+author: "Gergely Koppany"
+---
+
+This notebook is to introduce the user to the (reticulate R package)[<https://rstudio.github.io/reticulate/>], whic is used to run python from within the an R session.
+
+```{r}
+#install.packages("reticulate")
+library(reticulate)
+```
+
+# Select python environment
+
+The most crucial part is setting the python environment that you want to use within the R session. To change the python environment you have to restart Rstudio, so it is advised to uncheck Automatic activation of local-python enviroments at Tools \> Global Options \> Python.
+
+Then you can select the python you want to use:
+
+```{r}
+use_condaenv("/path/to/conda/environment/")
+use_python("/path/to/python")
+use_virtualenv("path/to/virual/environment")
+Sys.which("python") # check the python version currently used by R
+```
+
+# Run python from R
+
+There are multiply ways you can run python from your R session now
+
+## Run python in a python chunk
+
+By using a python chunk in the notebook you can simply run python like if you would do in another interpreter
+
+```{python}
+import re #the modules will be loaded from the selected python environment
+
+text = "hello" # you can see python variables in the environment > Python tab of Rstudio
+
+re.findall("l", text )
+```
+
+## Run python from a script or a string in R
+
+To run a python command from R you can use the `py_run_script()` or `py_run_file()` functions.
+
+*Note: When using strings in this method pay attention to escape the quotes and double quotes within the command. `\"`, `\'`*
+
+```{r}
+py_run_string("import re")
+
+py_run_string("text = \"hello\" ")
+
+py_run_string("res = re.findall(\'l\', text)")
+
+py_run_string("print(res)")
+```
+
+\## Importing python functions into your R session
+
+You can import python modules into your R session then use them within your R code as if they were a list of functions
+
+```{r}
+re <- import("re")
+
+text = "hello" # this wariable is in R
+
+re$findall("l", text) #here the output of the python code is an R vector
+```
+
+\# Passing variables between R and Python
+
+If you just want to pass a few variables from your R session to Pythin or vice-versa, you can do it by using the `py$` and \`r.\`\` objects in the R and python sessions respectively.
+
+*Note: Since python and R have different object structures, not all types of variables have their counterparts. For more details check the retivulate vignette*
+
+First assign a variable in R and in python
+
+```{r}
+r_var <- c("This", "is", "an", "R", "vector")
+```
+
+```{python}
+py_var = ["This","is", "a", "python", "list"]
+```
+
+Now call them inside the other environment
+
+```{python}
+for x in r.r_var:
+  print(x)
+```
+
+```{r}
+for (x in py$py_var){
+  print(x)
+}
+```
+
+For more useful tips visit <https://anderfernandez.com/en/blog/how-to-use-python-in-r/>

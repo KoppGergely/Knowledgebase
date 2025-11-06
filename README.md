@@ -98,3 +98,9 @@ Another RNAseq quantification tool, that can quantify gene counts from a genome 
 # Regex
 
 [Regex Cheat Sheet](https://images.datacamp.com/image/upload/v1665049611/Marketing/Blog/Regular_Expressions_Cheat_Sheet.pdf)
+
+## Shiny
+
+[Mastering shiny textbook](https://mastering-shiny.org/index.html) - for building apps
+
+[Shiny layouts](https://shiny.posit.co/r/layouts/) - for additional layout tips

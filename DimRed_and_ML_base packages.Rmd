@@ -1,0 +1,49 @@
+---
+title: "Dimensionality reduction"
+---
+
+# Dimensional Reduction methods
+
+## PCA
+
+Linear method, good for scaled, continous data `prcomp, priincomp` kernlab, for kernel PCA
+
+## UMAP, tSNE
+
+UMAP (Unsupervised, preserves global and local structure) `umap, uwot, Rtsne`
+
+## LDA
+
+Supervised, linear method for maximizing class separation
+
+# Standard pipeline
+
+-   QC - remove low quality samples, and low information features, detect outliers and remove them
+
+-   Normalise feature values: methods: quantile normalisation, z-transform, depending on data type
+
+-   Feature selecion: select most variable features - top 500-5000
+
+-   Scale and Center data
+
+-   PCA - Select top PCs: RNA-seq 10-30, scRNAseq: 20- 50 PCs
+
+-   Run UMAP on PCA
+
+-   Optionally remove batch effects using limma::removeBatchEffect() or sva::ComBat()
+
+# Classification and ML
+
+Logistic regression - predicting a binary outcome based on multiple parametres, also gives a probability to the response
+
+Random Forest - classification into multiple groups based on multiple parameters, robust to outliers and noise, captures nonlinear effects well.
+
+k-means - Unsupersvised clustering
+
+`caret, tindymodels` package for unified interface of ML methods, preprocessing and benchmarking
+
+## Python packages
+
+*In Python the most commonly used ML package is sklearn (scikit learn) for Logistc regression, Random forest, SVM, PCA pipelines ect.,*
+
+`numpy pandas scikit-learn matplotlib / seaborn`
